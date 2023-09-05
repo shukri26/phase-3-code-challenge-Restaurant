@@ -7,7 +7,7 @@ class TestRestaurant(unittest.TestCase):
     def setUp(self):
         self.restaurant1 = Restaurant("Burger King")
         self.restaurant2 = Restaurant("Pizza Hut")
-        self.customer1 = Customer("John", "Doe")
+        self.customer1 = Customer("hamed", "lem")
 
     def test_name(self):
         self.assertEqual(self.restaurant1.name, "Burger King")

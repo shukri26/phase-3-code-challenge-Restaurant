@@ -5,17 +5,17 @@ from Customer import Customer, Review, Restaurant
 class TestCustomer(unittest.TestCase):
 
     def setUp(self):
-        self.customer1 = Customer("John", "Doe")
-        self.customer2 = Customer("Alice", "Smith")
+        self.customer1 = Customer("hamed", "lem")
+        self.customer2 = Customer("abdi", "karim")
 
     def test_given_name(self):
-        self.assertEqual(self.customer1.given_name, "John")
+        self.assertEqual(self.customer1.given_name, "hamed")
 
     def test_family_name(self):
-        self.assertEqual(self.customer1.family_name, "Doe")
+        self.assertEqual(self.customer1.family_name, "lem")
 
     def test_full_name(self):
-        self.assertEqual(self.customer1.full_name(), "John Doe")
+        self.assertEqual(self.customer1.full_name(), "hamed lem")
 
     def test_all(self):
         self.assertEqual(Customer.all(), [self.customer1, self.customer2])
